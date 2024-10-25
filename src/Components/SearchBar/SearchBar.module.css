@@ -1,0 +1,81 @@
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 500px;
+    width: 100%;
+  }
+  
+  .inputContainer {
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex: 1;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .searchInput {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 15px 0 0 15px; /* Rounded left corners */
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .searchInput:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .searchButton {
+    background-color: #0056b3;; /* Button color */
+    border: none;
+    border-radius: 0 15px 15px 0; /* Rounded right corners */
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .searchButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .searchIcon {
+    color: white; /* Icon color */
+    font-size: 18px; /* Icon size */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .searchContainer {
+      margin: 10px; /* Reduce margin on smaller screens */
+    }
+  
+    .form {
+      flex-direction: column; /* Stack input and button on small screens */
+    }
+  
+    .inputContainer {
+      flex-direction: column; /* Stack input and button vertically on small screens */
+    }
+  
+    .searchButton {
+      width: 100%; /* Make button full width */
+      margin-left: 0; /* Remove left margin */
+      margin-top: 10px; /* Add top margin */
+      border-radius: 0; /* Remove border radius for full width */
+    }
+  }

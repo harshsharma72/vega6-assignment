@@ -1,0 +1,45 @@
+.container {
+    margin: 100px auto;
+    background-color: #f9f9f9; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px); /* Adjust for vertical centering */
+}
+
+.sampleCanvas {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ .input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px; 
+    width: 80%; 
+    max-width: 300px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} 
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
